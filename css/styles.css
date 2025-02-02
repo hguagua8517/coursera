@@ -1,57 +1,87 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 150%;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    background-color: #2f0e61;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+main{
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 nav{
-    background-color: #472ba0;
-    color: white;
-    padding: 15px 0;
-    text-align: initial;
+    display: inline-block;
+    width: 80%;
 }
-nav a{
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-}
-nav a:hover{
-    background-color: #3c137a;
-    opacity: 0.5;
-    background-origin: padding-box;
-    border-radius: 5px;
-}
-main{
-    padding: 20px;
-    background-color: #aaa1c6;
-    font-size: 1.2em;
-}
-footer{
-    background-color: #2f0e61;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-li{
-    display: inline;
-    padding: 10px;
-    width: 100px;
-}
+ nav a{
+    padding-left: 10px;
+   }
+ .images{
+    width: 10%;
+    position: relative;
+    top: 20px;
+   }
+   .grid_images{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;;
+   }
+   .grid_images1{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+   }
+   img{
+    width: 80%;
+    height: auto;
+   }
 h1{
     text-align: center;
-    font-family: lato;
-    font-size: 2em;
-    color: #b8b0b0;
+    color: rgb(60, 60, 168);
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
 }
-p{
-    line-height: 1.5em;
+#main_content{
+    background-color: yellow;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+li{
+    margin: 5px;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+.current{
+    text-transform: uppercase;
+}
+header{
+    background-color: rgb(162, 156, 156);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+} 
+header>h1{
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
 
+p{
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+}
+footer{
+    background-color: rgb(162, 156, 156);
 }
